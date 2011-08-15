@@ -5,6 +5,7 @@
     Private Sub Initial_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Width = 445
         Me.Height = 345
+        Me.CenterToScreen()
         Step2.Location = Step1.Location
         Step2.Size = Step1.Size
         Step3.Location = Step1.Location
