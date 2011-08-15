@@ -72,7 +72,7 @@
             formReset()
         End If
         svitcher(i)
-        
+
     End Sub
 
     Private Sub BBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BBack.Click
@@ -88,5 +88,9 @@
     End Sub
     Private Sub PlayPause_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PlayPause.Click
         checkingProcess()
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+
     End Sub
 End Class
