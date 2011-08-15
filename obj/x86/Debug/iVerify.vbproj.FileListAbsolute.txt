@@ -1,0 +1,12 @@
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\bin\Debug\iVerify.exe
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\bin\Debug\iVerify.pdb
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\bin\Debug\iVerify.xml
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\WindowsApplication1.Initial.resources
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\iVerify.exe
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\iVerify.xml
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\iVerify.pdb
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Debug\WindowsApplication1.SplashScreen.resources

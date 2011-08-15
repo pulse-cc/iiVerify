@@ -8,12 +8,12 @@ Imports System.Runtime.InteropServices
 
 ' Проверьте значения атрибутов сборки
 
-<Assembly: AssemblyTitle("WindowsApplication1")> 
-<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyTitle("iVerify")> 
+<Assembly: AssemblyDescription("программа для проведения автоматизированной поверки термоэлектрических преобразователей")> 
 <Assembly: AssemblyCompany("Pulse Computer Consulting")> 
-<Assembly: AssemblyProduct("WindowsApplication1")> 
-<Assembly: AssemblyCopyright("Copyright © Pulse Computer Consulting 2011")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyProduct("iVerify")> 
+<Assembly: AssemblyCopyright("Copyfree © Pulse Computer Consulting 2011")> 
+<Assembly: AssemblyTrademark("PulseCC")> 
 
 <Assembly: ComVisible(False)>
 

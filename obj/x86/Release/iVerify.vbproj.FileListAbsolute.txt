@@ -9,3 +9,6 @@ C:\Staff\iVerify\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Staff\iVerify\obj\x86\Release\iVerify.exe
 C:\Staff\iVerify\obj\x86\Release\iVerify.xml
 C:\Staff\iVerify\obj\x86\Release\iVerify.pdb
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Release\iVerify.exe
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Release\iVerify.xml
+C:\Documents and Settings\beetle\Мои документы\Visual Studio 2010\Projects\iVerify\obj\x86\Release\iVerify.pdb
