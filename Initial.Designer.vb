@@ -68,8 +68,6 @@ Partial Class Initial
         Me.PlayPause = New System.Windows.Forms.Button()
         Me.Log = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.ShapeContainer5 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape5 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
@@ -83,9 +81,9 @@ Partial Class Initial
         '
         Me.Buttons.Controls.Add(Me.BBack)
         Me.Buttons.Controls.Add(Me.BNext)
-        Me.Buttons.Location = New System.Drawing.Point(271, 282)
+        Me.Buttons.Location = New System.Drawing.Point(257, 282)
         Me.Buttons.Name = "Buttons"
-        Me.Buttons.Size = New System.Drawing.Size(161, 33)
+        Me.Buttons.Size = New System.Drawing.Size(175, 36)
         Me.Buttons.TabIndex = 0
         '
         'BBack
@@ -94,7 +92,7 @@ Partial Class Initial
         Me.BBack.Name = "BBack"
         Me.BBack.Size = New System.Drawing.Size(75, 23)
         Me.BBack.TabIndex = 1
-        Me.BBack.Text = "назад"
+        Me.BBack.Text = "Назад"
         Me.BBack.UseVisualStyleBackColor = True
         '
         'BNext
@@ -103,7 +101,7 @@ Partial Class Initial
         Me.BNext.Name = "BNext"
         Me.BNext.Size = New System.Drawing.Size(75, 23)
         Me.BNext.TabIndex = 0
-        Me.BNext.Text = "вперед"
+        Me.BNext.Text = "Вперед"
         Me.BNext.UseVisualStyleBackColor = True
         '
         'Step1
@@ -151,16 +149,18 @@ Partial Class Initial
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(402, 31)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Укажите производителя поверяемых термоэлектрических преобразователей"
+        Me.Label2.Text = "Укажите производителя поверяемого термоэлектрического преобразователя" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(3, 5)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(422, 34)
+        Me.Label1.Size = New System.Drawing.Size(422, 54)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "для начала проведения поверки термоэлектрических преобразователей необходимо выбр" & _
+        Me.Label1.Text = "Для начала проведения поверки термоэлектрического преобразователя необходимо выбр" & _
             "ать исходные данные"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ShapeContainer1
         '
@@ -198,11 +198,12 @@ Partial Class Initial
         'GoodCondition
         '
         Me.GoodCondition.AutoSize = True
-        Me.GoodCondition.Location = New System.Drawing.Point(10, 218)
+        Me.GoodCondition.ForeColor = System.Drawing.Color.Crimson
+        Me.GoodCondition.Location = New System.Drawing.Point(158, 201)
         Me.GoodCondition.Name = "GoodCondition"
-        Me.GoodCondition.Size = New System.Drawing.Size(99, 17)
+        Me.GoodCondition.Size = New System.Drawing.Size(97, 17)
         Me.GoodCondition.TabIndex = 5
-        Me.GoodCondition.Text = "соответствует"
+        Me.GoodCondition.Text = "Подтверждаю"
         Me.GoodCondition.UseVisualStyleBackColor = True
         '
         'Label6
@@ -211,17 +212,18 @@ Partial Class Initial
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(422, 46)
         Me.Label6.TabIndex = 4
-        Me.Label6.Text = "преобразователи  не должны иметь механических повреждений и неисправностей соедин" & _
-            "ительных элементов, влияющих на их нормальную работу."
+        Me.Label6.Text = "Преобразователь  не имеет механических повреждений и неисправностей соединительны" & _
+            "х элементов, влияющих на его нормальную работу"
         '
         'Completeness
         '
         Me.Completeness.AutoSize = True
-        Me.Completeness.Location = New System.Drawing.Point(7, 130)
+        Me.Completeness.ForeColor = System.Drawing.Color.Crimson
+        Me.Completeness.Location = New System.Drawing.Point(158, 116)
         Me.Completeness.Name = "Completeness"
-        Me.Completeness.Size = New System.Drawing.Size(99, 17)
+        Me.Completeness.Size = New System.Drawing.Size(97, 17)
         Me.Completeness.TabIndex = 3
-        Me.Completeness.Text = "соответствует"
+        Me.Completeness.Text = "Подтверждаю"
         Me.Completeness.UseVisualStyleBackColor = True
         '
         'Label5
@@ -230,17 +232,19 @@ Partial Class Initial
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(422, 40)
         Me.Label5.TabIndex = 2
-        Me.Label5.Text = "преобразователи должны быть укомплектованы согласно НТД на преобразователи конкре" & _
-            "тного типа и иметь свидетельство о предыдущей поверке;"
+        Me.Label5.Text = "Преобразователь укомплектован согласно НТД на преобразователи данного типа и имее" & _
+            "т свидетельство о предыдущей поверке"
         '
         'Label4
         '
-        Me.Label4.Location = New System.Drawing.Point(4, 5)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label4.Location = New System.Drawing.Point(4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(421, 49)
+        Me.Label4.Size = New System.Drawing.Size(421, 54)
         Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Произведите внешний осмотр. При внешнем осмотре должно быть установлено соответст" & _
-            "вие преобразователей следующим требованиям:"
+        Me.Label4.Text = "Произведите внешний осмотр. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Подтвердите соответствие преобразователя следующим " & _
+            "требованиям:"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ShapeContainer2
         '
@@ -284,11 +288,13 @@ Partial Class Initial
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(106, 10)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label7.Location = New System.Drawing.Point(78, 12)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(191, 13)
+        Me.Label7.Size = New System.Drawing.Size(279, 17)
         Me.Label7.TabIndex = 1
-        Me.Label7.Text = "соедините приборы согласно схеме"
+        Me.Label7.Text = "Соедините приборы согласно схеме"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ShapeContainer3
         '
@@ -349,7 +355,7 @@ Partial Class Initial
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(69, 234)
+        Me.Label14.Location = New System.Drawing.Point(69, 237)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 13)
         Me.Label14.TabIndex = 15
@@ -364,16 +370,16 @@ Partial Class Initial
         '
         'Label13
         '
-        Me.Label13.Location = New System.Drawing.Point(7, 212)
+        Me.Label13.Location = New System.Drawing.Point(10, 212)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(418, 22)
+        Me.Label13.Size = New System.Drawing.Size(415, 22)
         Me.Label13.TabIndex = 13
-        Me.Label13.Text = "укажите время прогрева термоэлектрического преобразователя"
+        Me.Label13.Text = "Укажите время прогрева термоэлектрического преобразователя"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(116, 169)
+        Me.Label12.Location = New System.Drawing.Point(116, 172)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(37, 13)
         Me.Label12.TabIndex = 11
@@ -388,11 +394,11 @@ Partial Class Initial
         '
         'Label11
         '
-        Me.Label11.Location = New System.Drawing.Point(7, 146)
+        Me.Label11.Location = New System.Drawing.Point(7, 149)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(421, 20)
+        Me.Label11.Size = New System.Drawing.Size(418, 20)
         Me.Label11.TabIndex = 9
-        Me.Label11.Text = "укажите максимально допустимое напряжение в вольтах"
+        Me.Label11.Text = "Укажите максимально допустимое напряжение в вольтах"
         '
         'Label10
         '
@@ -412,21 +418,22 @@ Partial Class Initial
         '
         'Label9
         '
-        Me.Label9.Location = New System.Drawing.Point(4, 84)
+        Me.Label9.Location = New System.Drawing.Point(7, 74)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(424, 26)
+        Me.Label9.Size = New System.Drawing.Size(418, 26)
         Me.Label9.TabIndex = 6
-        Me.Label9.Text = "укажите напряжение в вольтах при котором будет производиться поверка"
+        Me.Label9.Text = "Укажите напряжение в вольтах при котором будет производиться поверка"
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(3, 9)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label8.Location = New System.Drawing.Point(3, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(408, 51)
+        Me.Label8.Size = New System.Drawing.Size(422, 60)
         Me.Label8.TabIndex = 4
-        Me.Label8.Text = "Для начала процессов определения погрешности компарирования напряжения и определе" & _
-            "ния погрешности компарирования напряжения на частотах выше 1 кГц введите начальн" & _
-            "ые данные"
+        Me.Label8.Text = "Для начала процессов определения погрешности компарирования напряжения введите на" & _
+            "чальные данные"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ShapeContainer4
         '
@@ -461,7 +468,6 @@ Partial Class Initial
         Me.Step5.Controls.Add(Me.PlayPause)
         Me.Step5.Controls.Add(Me.Log)
         Me.Step5.Controls.Add(Me.Label16)
-        Me.Step5.Controls.Add(Me.ShapeContainer5)
         Me.Step5.Location = New System.Drawing.Point(4, 605)
         Me.Step5.Name = "Step5"
         Me.Step5.Size = New System.Drawing.Size(428, 278)
@@ -471,11 +477,12 @@ Partial Class Initial
         'AutoStepVer
         '
         Me.AutoStepVer.AutoSize = True
-        Me.AutoStepVer.Location = New System.Drawing.Point(100, 255)
+        Me.AutoStepVer.Location = New System.Drawing.Point(100, 253)
         Me.AutoStepVer.Name = "AutoStepVer"
-        Me.AutoStepVer.Size = New System.Drawing.Size(129, 17)
+        Me.AutoStepVer.Size = New System.Drawing.Size(165, 17)
         Me.AutoStepVer.TabIndex = 6
-        Me.AutoStepVer.Text = "не останавливаться"
+        Me.AutoStepVer.Text = "Далее не останавливаться"
+        Me.AutoStepVer.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.AutoStepVer.UseVisualStyleBackColor = True
         '
         'PlayPause
@@ -484,50 +491,33 @@ Partial Class Initial
         Me.PlayPause.Name = "PlayPause"
         Me.PlayPause.Size = New System.Drawing.Size(84, 23)
         Me.PlayPause.TabIndex = 5
-        Me.PlayPause.Text = "продолжить"
+        Me.PlayPause.Text = "Продолжить"
         Me.PlayPause.UseVisualStyleBackColor = True
         '
         'Log
         '
         Me.Log.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Log.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Log.Location = New System.Drawing.Point(3, 38)
+        Me.Log.Location = New System.Drawing.Point(3, 41)
         Me.Log.Name = "Log"
-        Me.Log.Size = New System.Drawing.Size(422, 205)
+        Me.Log.Size = New System.Drawing.Size(422, 193)
         Me.Log.TabIndex = 4
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(4, 5)
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label16.Location = New System.Drawing.Point(106, 9)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(145, 13)
+        Me.Label16.Size = New System.Drawing.Size(226, 17)
         Me.Label16.TabIndex = 2
-        Me.Label16.Text = "Запущен процесс поверки:"
-        '
-        'ShapeContainer5
-        '
-        Me.ShapeContainer5.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer5.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer5.Name = "ShapeContainer5"
-        Me.ShapeContainer5.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape5})
-        Me.ShapeContainer5.Size = New System.Drawing.Size(428, 278)
-        Me.ShapeContainer5.TabIndex = 3
-        Me.ShapeContainer5.TabStop = False
-        '
-        'LineShape5
-        '
-        Me.LineShape5.BorderWidth = 2
-        Me.LineShape5.Name = "LineShape5"
-        Me.LineShape5.X1 = 1
-        Me.LineShape5.X2 = 428
-        Me.LineShape5.Y1 = 31
-        Me.LineShape5.Y2 = 31
+        Me.Label16.Text = "Запущен процесс поверки ..."
         '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(918, 920)
         Me.Controls.Add(Me.Step6)
         Me.Controls.Add(Me.Step5)
@@ -536,8 +526,9 @@ Partial Class Initial
         Me.Controls.Add(Me.Step2)
         Me.Controls.Add(Me.Step1)
         Me.Controls.Add(Me.Buttons)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Initial"
         Me.Text = "iVerify"
         Me.Buttons.ResumeLayout(False)
@@ -599,7 +590,5 @@ Partial Class Initial
     Friend WithEvents PlayPause As System.Windows.Forms.Button
     Friend WithEvents Log As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents ShapeContainer5 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
-    Friend WithEvents LineShape5 As Microsoft.VisualBasic.PowerPacks.LineShape
 
 End Class

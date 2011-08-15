@@ -3,8 +3,8 @@
 
 
     Private Sub Initial_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Width = 441
-        Me.Height = 340
+        Me.Width = 445
+        Me.Height = 345
         Step2.Location = Step1.Location
         Step2.Size = Step1.Size
         Step3.Location = Step1.Location
@@ -26,7 +26,7 @@
                 Step1.Visible = True
                 Step2.Visible = False
                 Step6.Visible = False
-                BNext.Text = "вперед"
+                BNext.Text = "Вперед"
                 BBack.Enabled = False
             Case 2
                 Step2.Visible = True
@@ -45,12 +45,12 @@
                 Step5.Visible = True
                 Step6.Visible = False
                 Step4.Visible = False
-                BNext.Text = "вперед"
+                BNext.Text = "Вперед"
             Case 6
                 Step6.Visible = True
                 Step1.Visible = False
                 Step5.Visible = False
-                BNext.Text = "сначала"
+                BNext.Text = "Сначала"
         End Select
     End Sub
     Sub formReset()
@@ -90,7 +90,5 @@
         checkingProcess()
     End Sub
 
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
 
-    End Sub
 End Class

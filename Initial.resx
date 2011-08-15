@@ -157,8 +157,8 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVUAAADwCAYAAACwqvfHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN1QAA
-        DdUBPdZY8QAASZpJREFUeF7tnQecFMXyx/fyHRyXCEfmyDnnfOScM0fO8YhmBcSAWcwYnqI+49+ACmYR
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN1AAA
+        DdQB75G6FQAASZpJREFUeF7tnQecFMXyx/fyHRyXCEfmyDnnfOScM0fO8YhmBcSAWcwYnqI+49+ACmYR
         MWEWs0/fM2cURURBsf7165teZ5e9jb3pqPt86nO7Mz09s93V36kOVZ1ARA75kxKQEpASkBIwVAKAqoiU
         geiA6IDogBkdEKDKS0V0QHRAdMCgDkhhGixMedObedNLOUo5xrMOCFQFqqIDogOiAwZ1QArTYGHG89tV
         nl2sQ9EBMzogUBWoig6IDogOGNQBKUyDhSlvejNveilHKcd41gGBqkBVdEB0QHTAoA5IYRoszHh+u8qz
@@ -511,24 +511,6 @@
   <metadata name="LineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>427, 0</value>
   </metadata>
-  <metadata name="LineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 31, 427, 0</value>
-  </metadata>
-  <metadata name="LineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 31</value>
-  </metadata>
-  <metadata name="LineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 0</value>
-  </metadata>
-  <metadata name="LineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 31, 427, 0</value>
-  </metadata>
-  <metadata name="LineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 31</value>
-  </metadata>
-  <metadata name="LineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 0</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAICAQAAAABADoAgAAJgAAABAQEAAAAAQAKAEAAA4DAAAoAAAAIAAAAEAAAAABAAQAAAAAAAAC
@@ -545,9 +527,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAoAAAAEAAAACAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAgAAAgAAAAICAAIAA
-        AACAAIAAgIAAAMDAwACAgIAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AOz/////////zsz/////
-        ///87sz////////O7s//////u7zu7Lu7u7u7u87uzLu7u7u7vO7uzLu7u7vO7u7sy7uZnO7u7syZmZmZ
-        zO7uyZmZmZmZzO7smZmZmZmZzu7JmREREREc7uwRERERERHM7sERERERERzM7BERERERERzOAAAAAAAA
+        AACAAIAAgIAAAMDAwACAgIAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AEz/////////zsz/////
+        ///87s////////vO7Pv7+/v7+/zuzPv7+/u7u87uy7u7u7u7vO7sy7u7ubnM7u7sSbm5tM7u7sy5uZmZ
+        nM7uyZmZmZmZnO7smZmRkZGRzu7BkZGRkZGczuyREREREREc7sERERERERHM7BERERERERHEAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>
