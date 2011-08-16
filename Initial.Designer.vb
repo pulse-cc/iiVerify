@@ -73,12 +73,18 @@ Partial Class Initial
         Me.PlayPause = New System.Windows.Forms.Button()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.LogErr = New System.Windows.Forms.RichTextBox()
+        Me.source = New System.Windows.Forms.TextBox()
+        Me.split = New System.Windows.Forms.Button()
+        Me.Head = New System.Windows.Forms.TextBox()
+        Me.Tail = New System.Windows.Forms.TextBox()
+        Me.Splitter = New System.Windows.Forms.TextBox()
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
         Me.Step3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Step4.SuspendLayout()
+        Me.Step6.SuspendLayout()
         Me.Step5.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -497,6 +503,11 @@ Partial Class Initial
         '
         'Step6
         '
+        Me.Step6.Controls.Add(Me.Splitter)
+        Me.Step6.Controls.Add(Me.Tail)
+        Me.Step6.Controls.Add(Me.Head)
+        Me.Step6.Controls.Add(Me.split)
+        Me.Step6.Controls.Add(Me.source)
         Me.Step6.Location = New System.Drawing.Point(438, 605)
         Me.Step6.Name = "Step6"
         Me.Step6.Size = New System.Drawing.Size(428, 278)
@@ -568,6 +579,43 @@ Partial Class Initial
         Me.LogErr.TabIndex = 8
         Me.LogErr.Text = ""
         '
+        'source
+        '
+        Me.source.Location = New System.Drawing.Point(24, 20)
+        Me.source.Name = "source"
+        Me.source.Size = New System.Drawing.Size(230, 20)
+        Me.source.TabIndex = 0
+        '
+        'split
+        '
+        Me.split.Location = New System.Drawing.Point(24, 107)
+        Me.split.Name = "split"
+        Me.split.Size = New System.Drawing.Size(91, 24)
+        Me.split.TabIndex = 1
+        Me.split.Text = "LSplit"
+        Me.split.UseVisualStyleBackColor = True
+        '
+        'Head
+        '
+        Me.Head.Location = New System.Drawing.Point(24, 173)
+        Me.Head.Name = "Head"
+        Me.Head.Size = New System.Drawing.Size(230, 20)
+        Me.Head.TabIndex = 2
+        '
+        'Tail
+        '
+        Me.Tail.Location = New System.Drawing.Point(24, 223)
+        Me.Tail.Name = "Tail"
+        Me.Tail.Size = New System.Drawing.Size(230, 20)
+        Me.Tail.TabIndex = 3
+        '
+        'Splitter
+        '
+        Me.Splitter.Location = New System.Drawing.Point(25, 62)
+        Me.Splitter.Name = "Splitter"
+        Me.Splitter.Size = New System.Drawing.Size(230, 20)
+        Me.Splitter.TabIndex = 4
+        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -595,6 +643,8 @@ Partial Class Initial
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Step4.ResumeLayout(False)
         Me.Step4.PerformLayout()
+        Me.Step6.ResumeLayout(False)
+        Me.Step6.PerformLayout()
         Me.Step5.ResumeLayout(False)
         Me.Step5.PerformLayout()
         Me.ResumeLayout(False)
@@ -650,5 +700,10 @@ Partial Class Initial
     Friend WithEvents G As System.Windows.Forms.TextBox
     Friend WithEvents Log As System.Windows.Forms.RichTextBox
     Friend WithEvents LogErr As System.Windows.Forms.RichTextBox
+    Friend WithEvents Tail As System.Windows.Forms.TextBox
+    Friend WithEvents Head As System.Windows.Forms.TextBox
+    Friend WithEvents split As System.Windows.Forms.Button
+    Friend WithEvents source As System.Windows.Forms.TextBox
+    Friend WithEvents Splitter As System.Windows.Forms.TextBox
 
 End Class

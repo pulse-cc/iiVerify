@@ -1,4 +1,12 @@
 ﻿Public Class Initial
+    Public Function LSplit(ByVal Source As String, ByVal Split As String, _
+                           ByRef Head As String, ByRef Tail As String)
+        Dim ix As Long = InStr(Source, Split)
+        If ix = 0 Then Return False
+        Head = Trim(Mid(Source, 1, ix - 1))
+        Tail = Trim(Mid(Source, ix + Len(Split)))
+        Return True
+    End Function
 
     Private Function InvokeProcess(ByVal ProcessName As String, ByVal Arguments As String, _
         ByRef StdOutStr As String, ByRef StdErrStr As String) As Integer
@@ -39,6 +47,8 @@
         BBack.Enabled = False
         LogErr.Visible = False
         Log.Height = 205
+        source.Text = "suka is yana"
+        Splitter.Text = "is"
     End Sub
 
     Dim i = 1
@@ -75,6 +85,7 @@
                 BNext.Text = "Заново"
         End Select
     End Sub
+
     Sub formReset()
         ChoiseOfFirm.ResetText()
         ChoiseTET.ResetText()
@@ -87,6 +98,7 @@
         Log.Text = ""
         AutoStepVer.CheckState = CheckState.Unchecked
     End Sub
+
     Private Sub BNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BNext.Click
         i += 1
         If i > 6 Then
@@ -101,6 +113,7 @@
         i -= 1
         svitcher(i)
     End Sub
+
     Sub checkingProcess()
         Dim counter = 0
         While counter < 500
@@ -108,6 +121,7 @@
             counter += 1
         End While
     End Sub
+
     Private Sub PlayPause_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PlayPause.Click
         Me.PlayPause.Enabled = False
         Me.Cursor = Cursors.WaitCursor
@@ -123,5 +137,11 @@
         End If
         PlayPause.Enabled = True
         Cursor = Cursors.Default
+    End Sub
+
+    Private Sub split_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles split.Click
+        Head.Text = "?"
+        Tail.Text = "?"
+        LSplit(source.Text, Splitter.Text, Head.Text, Tail.Text)
     End Sub
 End Class
