@@ -54,7 +54,7 @@ Partial Class Initial
         Me.Hourse = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Umax = New System.Windows.Forms.TextBox()
+        Me.T = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.U = New System.Windows.Forms.TextBox()
@@ -68,6 +68,10 @@ Partial Class Initial
         Me.PlayPause = New System.Windows.Forms.Button()
         Me.Log = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.lblG = New System.Windows.Forms.Label()
+        Me.G = New System.Windows.Forms.TextBox()
+        Me.lblP = New System.Windows.Forms.Label()
+        Me.P = New System.Windows.Forms.TextBox()
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
@@ -92,7 +96,7 @@ Partial Class Initial
         Me.BBack.Name = "BBack"
         Me.BBack.Size = New System.Drawing.Size(75, 23)
         Me.BBack.TabIndex = 1
-        Me.BBack.Text = "Назад"
+        Me.BBack.Text = "< Назад"
         Me.BBack.UseVisualStyleBackColor = True
         '
         'BNext
@@ -101,7 +105,7 @@ Partial Class Initial
         Me.BNext.Name = "BNext"
         Me.BNext.Size = New System.Drawing.Size(75, 23)
         Me.BNext.TabIndex = 0
-        Me.BNext.Text = "Вперед"
+        Me.BNext.Text = "Вперед >"
         Me.BNext.UseVisualStyleBackColor = True
         '
         'Step1
@@ -317,13 +321,17 @@ Partial Class Initial
         '
         'Step4
         '
+        Me.Step4.Controls.Add(Me.lblP)
+        Me.Step4.Controls.Add(Me.P)
+        Me.Step4.Controls.Add(Me.lblG)
+        Me.Step4.Controls.Add(Me.G)
         Me.Step4.Controls.Add(Me.Label15)
         Me.Step4.Controls.Add(Me.Minut)
         Me.Step4.Controls.Add(Me.Label14)
         Me.Step4.Controls.Add(Me.Hourse)
         Me.Step4.Controls.Add(Me.Label13)
         Me.Step4.Controls.Add(Me.Label12)
-        Me.Step4.Controls.Add(Me.Umax)
+        Me.Step4.Controls.Add(Me.T)
         Me.Step4.Controls.Add(Me.Label11)
         Me.Step4.Controls.Add(Me.Label10)
         Me.Step4.Controls.Add(Me.U)
@@ -339,7 +347,7 @@ Partial Class Initial
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(181, 237)
+        Me.Label15.Location = New System.Drawing.Point(180, 247)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(38, 13)
         Me.Label15.TabIndex = 17
@@ -347,7 +355,7 @@ Partial Class Initial
         '
         'Minut
         '
-        Me.Minut.Location = New System.Drawing.Point(122, 234)
+        Me.Minut.Location = New System.Drawing.Point(122, 242)
         Me.Minut.Name = "Minut"
         Me.Minut.Size = New System.Drawing.Size(53, 20)
         Me.Minut.TabIndex = 16
@@ -355,7 +363,7 @@ Partial Class Initial
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(69, 237)
+        Me.Label14.Location = New System.Drawing.Point(68, 247)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(39, 13)
         Me.Label14.TabIndex = 15
@@ -363,14 +371,14 @@ Partial Class Initial
         '
         'Hourse
         '
-        Me.Hourse.Location = New System.Drawing.Point(10, 234)
+        Me.Hourse.Location = New System.Drawing.Point(10, 242)
         Me.Hourse.Name = "Hourse"
         Me.Hourse.Size = New System.Drawing.Size(53, 20)
         Me.Hourse.TabIndex = 14
         '
         'Label13
         '
-        Me.Label13.Location = New System.Drawing.Point(10, 212)
+        Me.Label13.Location = New System.Drawing.Point(10, 220)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(415, 22)
         Me.Label13.TabIndex = 13
@@ -379,50 +387,50 @@ Partial Class Initial
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(116, 172)
+        Me.Label12.Location = New System.Drawing.Point(7, 166)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(37, 13)
+        Me.Label12.Size = New System.Drawing.Size(87, 13)
         Me.Label12.TabIndex = 11
-        Me.Label12.Text = "Вольт"
+        Me.Label12.Text = "Температура, С" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Umax
+        'T
         '
-        Me.Umax.Location = New System.Drawing.Point(10, 169)
-        Me.Umax.Name = "Umax"
-        Me.Umax.Size = New System.Drawing.Size(100, 20)
-        Me.Umax.TabIndex = 10
+        Me.T.Location = New System.Drawing.Point(10, 182)
+        Me.T.Name = "T"
+        Me.T.Size = New System.Drawing.Size(84, 20)
+        Me.T.TabIndex = 10
         '
         'Label11
         '
-        Me.Label11.Location = New System.Drawing.Point(7, 149)
+        Me.Label11.Location = New System.Drawing.Point(7, 143)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(418, 20)
+        Me.Label11.Size = New System.Drawing.Size(406, 18)
         Me.Label11.TabIndex = 9
-        Me.Label11.Text = "Укажите максимально допустимое напряжение в вольтах"
+        Me.Label11.Text = "Укажите условия поверки"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(116, 106)
+        Me.Label10.Location = New System.Drawing.Point(7, 95)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(37, 13)
+        Me.Label10.Size = New System.Drawing.Size(84, 13)
         Me.Label10.TabIndex = 8
-        Me.Label10.Text = "Вольт"
+        Me.Label10.Text = "Напряжение, В"
         '
         'U
         '
-        Me.U.Location = New System.Drawing.Point(10, 103)
+        Me.U.Location = New System.Drawing.Point(10, 111)
         Me.U.Name = "U"
-        Me.U.Size = New System.Drawing.Size(100, 20)
+        Me.U.Size = New System.Drawing.Size(84, 20)
         Me.U.TabIndex = 7
         '
         'Label9
         '
         Me.Label9.Location = New System.Drawing.Point(7, 74)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(418, 26)
+        Me.Label9.Size = New System.Drawing.Size(406, 26)
         Me.Label9.TabIndex = 6
-        Me.Label9.Text = "Укажите напряжение в вольтах при котором будет производиться поверка"
+        Me.Label9.Text = "Укажите напряжение при котором будет производиться поверка"
         '
         'Label8
         '
@@ -513,6 +521,38 @@ Partial Class Initial
         Me.Label16.TabIndex = 2
         Me.Label16.Text = "Запущен процесс поверки ..."
         '
+        'lblG
+        '
+        Me.lblG.AutoSize = True
+        Me.lblG.Location = New System.Drawing.Point(155, 166)
+        Me.lblG.Name = "lblG"
+        Me.lblG.Size = New System.Drawing.Size(77, 13)
+        Me.lblG.TabIndex = 19
+        Me.lblG.Text = "Влажность, %" & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'G
+        '
+        Me.G.Location = New System.Drawing.Point(158, 182)
+        Me.G.Name = "G"
+        Me.G.Size = New System.Drawing.Size(84, 20)
+        Me.G.TabIndex = 18
+        '
+        'lblP
+        '
+        Me.lblP.AutoSize = True
+        Me.lblP.Location = New System.Drawing.Point(296, 166)
+        Me.lblP.Name = "lblP"
+        Me.lblP.Size = New System.Drawing.Size(107, 13)
+        Me.lblP.TabIndex = 21
+        Me.lblP.Text = "Атм. давление, кПа"
+        '
+        'P
+        '
+        Me.P.Location = New System.Drawing.Point(299, 182)
+        Me.P.Name = "P"
+        Me.P.Size = New System.Drawing.Size(104, 20)
+        Me.P.TabIndex = 20
+        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -578,7 +618,7 @@ Partial Class Initial
     Friend WithEvents Hourse As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents Umax As System.Windows.Forms.TextBox
+    Friend WithEvents T As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents U As System.Windows.Forms.TextBox
@@ -590,5 +630,9 @@ Partial Class Initial
     Friend WithEvents PlayPause As System.Windows.Forms.Button
     Friend WithEvents Log As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents lblP As System.Windows.Forms.Label
+    Friend WithEvents P As System.Windows.Forms.TextBox
+    Friend WithEvents lblG As System.Windows.Forms.Label
+    Friend WithEvents G As System.Windows.Forms.TextBox
 
 End Class

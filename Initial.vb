@@ -27,7 +27,7 @@
                 Step1.Visible = True
                 Step2.Visible = False
                 Step6.Visible = False
-                BNext.Text = "Вперед"
+                BNext.Text = "Вперед >"
                 BBack.Enabled = False
             Case 2
                 Step2.Visible = True
@@ -46,12 +46,12 @@
                 Step5.Visible = True
                 Step6.Visible = False
                 Step4.Visible = False
-                BNext.Text = "Вперед"
+                BNext.Text = "Вперед >"
             Case 6
                 Step6.Visible = True
                 Step1.Visible = False
                 Step5.Visible = False
-                BNext.Text = "Сначала"
+                BNext.Text = "Заново"
         End Select
     End Sub
     Sub formReset()
@@ -60,7 +60,7 @@
         Completeness.CheckState = CheckState.Unchecked
         GoodCondition.CheckState = CheckState.Unchecked
         U.Text = ""
-        Umax.Text = ""
+        T.Text = ""
         Hourse.Text = ""
         Minut.Text = ""
         Log.Text = ""
