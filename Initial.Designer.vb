@@ -518,7 +518,10 @@ Partial Class Initial
         '
         'Log
         '
-        Me.Log.Location = New System.Drawing.Point(5, 38)
+        Me.Log.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Log.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Log.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Log.Location = New System.Drawing.Point(5, 37)
         Me.Log.Name = "Log"
         Me.Log.Size = New System.Drawing.Size(420, 134)
         Me.Log.TabIndex = 7
@@ -559,9 +562,9 @@ Partial Class Initial
         Me.LogErr.BackColor = System.Drawing.SystemColors.WindowText
         Me.LogErr.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.LogErr.ForeColor = System.Drawing.Color.Red
-        Me.LogErr.Location = New System.Drawing.Point(5, 179)
+        Me.LogErr.Location = New System.Drawing.Point(5, 173)
         Me.LogErr.Name = "LogErr"
-        Me.LogErr.Size = New System.Drawing.Size(418, 70)
+        Me.LogErr.Size = New System.Drawing.Size(420, 70)
         Me.LogErr.TabIndex = 8
         Me.LogErr.Text = ""
         '

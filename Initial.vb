@@ -14,8 +14,8 @@
         ' start the process 
         p.Start()
         ' read all the output
-        StdOutStr = StdOutStr + Chr(13) + Chr(10) + p.StandardOutput.ReadToEnd
-        StdErrStr = StdErrStr + Chr(13) + Chr(10) + p.StandardError.ReadToEnd()
+        StdOutStr = StdOutStr + p.StandardOutput.ReadToEnd
+        StdErrStr = StdErrStr + p.StandardError.ReadToEnd()
         ' wait for the process to terminate 
         p.WaitForExit()
         Return p.ExitCode
@@ -37,7 +37,8 @@
         Step6.Location = Step1.Location
         Step6.Size = Step1.Size
         BBack.Enabled = False
-
+        LogErr.Visible = False
+        Log.Height = 205
     End Sub
 
     Dim i = 1
@@ -112,6 +113,11 @@
         Me.Cursor = Cursors.WaitCursor
         InvokeProcess("C:\Staff\Metrology\Debug-COM\Inspector.exe", _
                       "suka fix U=2 F=0 Umax=20", Log.Text, LogErr.Text)
+        If LogErr.Text <> "" Then
+            LogErr.Visible = True
+            PlayPause.Height = 134
+            PlayPause.Refresh()
+        End If
         PlayPause.Enabled = True
         Cursor = Cursors.Default
     End Sub
