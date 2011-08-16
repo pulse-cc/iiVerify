@@ -48,6 +48,10 @@ Partial Class Initial
         Me.ShapeContainer3 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Step4 = New System.Windows.Forms.Panel()
+        Me.lblP = New System.Windows.Forms.Label()
+        Me.P = New System.Windows.Forms.TextBox()
+        Me.lblG = New System.Windows.Forms.Label()
+        Me.G = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Minut = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -64,14 +68,11 @@ Partial Class Initial
         Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Step6 = New System.Windows.Forms.Panel()
         Me.Step5 = New System.Windows.Forms.Panel()
+        Me.Log = New System.Windows.Forms.RichTextBox()
         Me.AutoStepVer = New System.Windows.Forms.CheckBox()
         Me.PlayPause = New System.Windows.Forms.Button()
-        Me.Log = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.lblG = New System.Windows.Forms.Label()
-        Me.G = New System.Windows.Forms.TextBox()
-        Me.lblP = New System.Windows.Forms.Label()
-        Me.P = New System.Windows.Forms.TextBox()
+        Me.LogErr = New System.Windows.Forms.RichTextBox()
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
@@ -344,6 +345,38 @@ Partial Class Initial
         Me.Step4.TabIndex = 2
         Me.Step4.Visible = False
         '
+        'lblP
+        '
+        Me.lblP.AutoSize = True
+        Me.lblP.Location = New System.Drawing.Point(296, 166)
+        Me.lblP.Name = "lblP"
+        Me.lblP.Size = New System.Drawing.Size(107, 13)
+        Me.lblP.TabIndex = 21
+        Me.lblP.Text = "Атм. давление, кПа"
+        '
+        'P
+        '
+        Me.P.Location = New System.Drawing.Point(299, 182)
+        Me.P.Name = "P"
+        Me.P.Size = New System.Drawing.Size(104, 20)
+        Me.P.TabIndex = 20
+        '
+        'lblG
+        '
+        Me.lblG.AutoSize = True
+        Me.lblG.Location = New System.Drawing.Point(155, 166)
+        Me.lblG.Name = "lblG"
+        Me.lblG.Size = New System.Drawing.Size(77, 13)
+        Me.lblG.TabIndex = 19
+        Me.lblG.Text = "Влажность, %" & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'G
+        '
+        Me.G.Location = New System.Drawing.Point(158, 182)
+        Me.G.Name = "G"
+        Me.G.Size = New System.Drawing.Size(84, 20)
+        Me.G.TabIndex = 18
+        '
         'Label15
         '
         Me.Label15.AutoSize = True
@@ -472,15 +505,24 @@ Partial Class Initial
         '
         'Step5
         '
+        Me.Step5.Controls.Add(Me.LogErr)
+        Me.Step5.Controls.Add(Me.Log)
         Me.Step5.Controls.Add(Me.AutoStepVer)
         Me.Step5.Controls.Add(Me.PlayPause)
-        Me.Step5.Controls.Add(Me.Log)
         Me.Step5.Controls.Add(Me.Label16)
         Me.Step5.Location = New System.Drawing.Point(4, 605)
         Me.Step5.Name = "Step5"
         Me.Step5.Size = New System.Drawing.Size(428, 278)
         Me.Step5.TabIndex = 5
         Me.Step5.Visible = False
+        '
+        'Log
+        '
+        Me.Log.Location = New System.Drawing.Point(5, 38)
+        Me.Log.Name = "Log"
+        Me.Log.Size = New System.Drawing.Size(420, 134)
+        Me.Log.TabIndex = 7
+        Me.Log.Text = ""
         '
         'AutoStepVer
         '
@@ -502,15 +544,6 @@ Partial Class Initial
         Me.PlayPause.Text = "Продолжить"
         Me.PlayPause.UseVisualStyleBackColor = True
         '
-        'Log
-        '
-        Me.Log.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Log.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Log.Location = New System.Drawing.Point(3, 41)
-        Me.Log.Name = "Log"
-        Me.Log.Size = New System.Drawing.Size(422, 193)
-        Me.Log.TabIndex = 4
-        '
         'Label16
         '
         Me.Label16.AutoSize = True
@@ -521,37 +554,16 @@ Partial Class Initial
         Me.Label16.TabIndex = 2
         Me.Label16.Text = "Запущен процесс поверки ..."
         '
-        'lblG
+        'LogErr
         '
-        Me.lblG.AutoSize = True
-        Me.lblG.Location = New System.Drawing.Point(155, 166)
-        Me.lblG.Name = "lblG"
-        Me.lblG.Size = New System.Drawing.Size(77, 13)
-        Me.lblG.TabIndex = 19
-        Me.lblG.Text = "Влажность, %" & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'G
-        '
-        Me.G.Location = New System.Drawing.Point(158, 182)
-        Me.G.Name = "G"
-        Me.G.Size = New System.Drawing.Size(84, 20)
-        Me.G.TabIndex = 18
-        '
-        'lblP
-        '
-        Me.lblP.AutoSize = True
-        Me.lblP.Location = New System.Drawing.Point(296, 166)
-        Me.lblP.Name = "lblP"
-        Me.lblP.Size = New System.Drawing.Size(107, 13)
-        Me.lblP.TabIndex = 21
-        Me.lblP.Text = "Атм. давление, кПа"
-        '
-        'P
-        '
-        Me.P.Location = New System.Drawing.Point(299, 182)
-        Me.P.Name = "P"
-        Me.P.Size = New System.Drawing.Size(104, 20)
-        Me.P.TabIndex = 20
+        Me.LogErr.BackColor = System.Drawing.SystemColors.WindowText
+        Me.LogErr.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.LogErr.ForeColor = System.Drawing.Color.Red
+        Me.LogErr.Location = New System.Drawing.Point(5, 179)
+        Me.LogErr.Name = "LogErr"
+        Me.LogErr.Size = New System.Drawing.Size(418, 70)
+        Me.LogErr.TabIndex = 8
+        Me.LogErr.Text = ""
         '
         'Initial
         '
@@ -628,11 +640,12 @@ Partial Class Initial
     Friend WithEvents LineShape4 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents AutoStepVer As System.Windows.Forms.CheckBox
     Friend WithEvents PlayPause As System.Windows.Forms.Button
-    Friend WithEvents Log As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents lblP As System.Windows.Forms.Label
     Friend WithEvents P As System.Windows.Forms.TextBox
     Friend WithEvents lblG As System.Windows.Forms.Label
     Friend WithEvents G As System.Windows.Forms.TextBox
+    Friend WithEvents Log As System.Windows.Forms.RichTextBox
+    Friend WithEvents LogErr As System.Windows.Forms.RichTextBox
 
 End Class

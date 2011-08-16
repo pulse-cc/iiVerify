@@ -1,5 +1,25 @@
 ﻿Public Class Initial
 
+    Private Function InvokeProcess(ByVal ProcessName As String, ByVal Arguments As String, _
+        ByRef StdOutStr As String, ByRef StdErrStr As String) As Integer
+        Dim p As Process = New Process
+        ' this is the name of the process we want to execute 
+        p.StartInfo.CreateNoWindow = True
+        p.StartInfo.FileName = ProcessName
+        p.StartInfo.Arguments = Arguments
+        ' need to set this to false to redirect output
+        p.StartInfo.UseShellExecute = False
+        p.StartInfo.RedirectStandardOutput = True
+        p.StartInfo.RedirectStandardError = True
+        ' start the process 
+        p.Start()
+        ' read all the output
+        StdOutStr = StdOutStr + Chr(13) + Chr(10) + p.StandardOutput.ReadToEnd
+        StdErrStr = StdErrStr + Chr(13) + Chr(10) + p.StandardError.ReadToEnd()
+        ' wait for the process to terminate 
+        p.WaitForExit()
+        Return p.ExitCode
+    End Function
 
 
     Private Sub Initial_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -88,7 +108,12 @@
         End While
     End Sub
     Private Sub PlayPause_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PlayPause.Click
-        checkingProcess()
+        Me.PlayPause.Enabled = False
+        Me.Cursor = Cursors.WaitCursor
+        InvokeProcess("C:\Staff\Metrology\Debug-COM\Inspector.exe", _
+                      "suka fix U=2 F=0 Umax=20", Log.Text, LogErr.Text)
+        PlayPause.Enabled = True
+        Cursor = Cursors.Default
     End Sub
 
 
