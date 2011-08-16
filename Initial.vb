@@ -14,8 +14,8 @@
         ' start the process 
         p.Start()
         ' read all the output
-        StdOutStr = StdOutStr + p.StandardOutput.ReadToEnd
-        StdErrStr = StdErrStr + p.StandardError.ReadToEnd()
+        StdOutStr += p.StandardOutput.ReadToEnd
+        StdErrStr += p.StandardError.ReadToEnd()
         ' wait for the process to terminate 
         p.WaitForExit()
         Return p.ExitCode
@@ -111,16 +111,17 @@
     Private Sub PlayPause_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PlayPause.Click
         Me.PlayPause.Enabled = False
         Me.Cursor = Cursors.WaitCursor
-        InvokeProcess("C:\Staff\Metrology\Debug-COM\Inspector.exe", _
-                      "suka fix U=2 F=0 Umax=20", Log.Text, LogErr.Text)
+        Dim cmd As String = "C:\Staff\Metrology\Debug-COM\Inspector.exe"
+        Dim arg As String = "fix U=2 F=0 Umax=20"
+        If TimeOfDay.Minute Mod 2 = 0 Then
+            arg = "suka " + arg
+        End If
+        InvokeProcess(cmd, arg, Log.Text, LogErr.Text)
         If LogErr.Text <> "" Then
             LogErr.Visible = True
-            PlayPause.Height = 134
-            PlayPause.Refresh()
+            Log.Height = 134
         End If
         PlayPause.Enabled = True
         Cursor = Cursors.Default
     End Sub
-
-
 End Class
