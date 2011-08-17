@@ -68,43 +68,20 @@ Partial Class Initial
         Me.ShapeContainer4 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Step6 = New System.Windows.Forms.Panel()
-        Me.Splitter = New System.Windows.Forms.TextBox()
-        Me.Tail = New System.Windows.Forms.TextBox()
-        Me.Head = New System.Windows.Forms.TextBox()
-        Me.split = New System.Windows.Forms.Button()
-        Me.source = New System.Windows.Forms.TextBox()
         Me.Step5 = New System.Windows.Forms.Panel()
         Me.LogErr = New System.Windows.Forms.RichTextBox()
         Me.Log = New System.Windows.Forms.RichTextBox()
         Me.AutoStepVer = New System.Windows.Forms.CheckBox()
         Me.PlayPause = New System.Windows.Forms.Button()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.ToolBox = New System.Windows.Forms.Button()
-        Me.lblPIN = New System.Windows.Forms.Label()
-        Me.PINbox = New System.Windows.Forms.MaskedTextBox()
-        Me.CtrlStep1 = New System.Windows.Forms.Panel()
-        Me.tabDB = New System.Windows.Forms.TabControl()
-        Me.metroTab = New System.Windows.Forms.TabPage()
-        Me.tblEnterprize = New System.Windows.Forms.DataGridView()
-        Me.deviceTab = New System.Windows.Forms.TabPage()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.ShapeContainer5 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape5 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.Calibrator = New System.IO.Ports.SerialPort(Me.components)
-        Me.VoltmRef = New System.IO.Ports.SerialPort(Me.components)
-        Me.VoltmVer = New System.IO.Ports.SerialPort(Me.components)
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
         Me.Step3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Step4.SuspendLayout()
-        Me.Step6.SuspendLayout()
         Me.Step5.SuspendLayout()
-        Me.CtrlStep1.SuspendLayout()
-        Me.tabDB.SuspendLayout()
-        Me.metroTab.SuspendLayout()
-        CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Buttons
@@ -179,7 +156,7 @@ Partial Class Initial
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(402, 31)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Укажите предприятие-владельца поверяемого термоэлектрического преобразователя" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Укажите производителя поверяемого термоэлектрического преобразователя" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label1
         '
@@ -385,6 +362,7 @@ Partial Class Initial
         Me.P.Name = "P"
         Me.P.Size = New System.Drawing.Size(104, 20)
         Me.P.TabIndex = 20
+        Me.P.Text = "0"
         '
         'lblG
         '
@@ -401,6 +379,7 @@ Partial Class Initial
         Me.G.Name = "G"
         Me.G.Size = New System.Drawing.Size(84, 20)
         Me.G.TabIndex = 18
+        Me.G.Text = "0"
         '
         'Label15
         '
@@ -417,6 +396,7 @@ Partial Class Initial
         Me.Minut.Name = "Minut"
         Me.Minut.Size = New System.Drawing.Size(53, 20)
         Me.Minut.TabIndex = 16
+        Me.Minut.Text = "0"
         '
         'Label14
         '
@@ -433,6 +413,7 @@ Partial Class Initial
         Me.Hourse.Name = "Hourse"
         Me.Hourse.Size = New System.Drawing.Size(53, 20)
         Me.Hourse.TabIndex = 14
+        Me.Hourse.Text = "0"
         '
         'Label13
         '
@@ -457,6 +438,7 @@ Partial Class Initial
         Me.T.Name = "T"
         Me.T.Size = New System.Drawing.Size(84, 20)
         Me.T.TabIndex = 10
+        Me.T.Text = "0"
         '
         'Label11
         '
@@ -481,6 +463,7 @@ Partial Class Initial
         Me.U.Name = "U"
         Me.U.Size = New System.Drawing.Size(84, 20)
         Me.U.TabIndex = 7
+        Me.U.Text = "0"
         '
         'Label9
         '
@@ -522,53 +505,11 @@ Partial Class Initial
         '
         'Step6
         '
-        Me.Step6.Controls.Add(Me.Splitter)
-        Me.Step6.Controls.Add(Me.Tail)
-        Me.Step6.Controls.Add(Me.Head)
-        Me.Step6.Controls.Add(Me.split)
-        Me.Step6.Controls.Add(Me.source)
         Me.Step6.Location = New System.Drawing.Point(438, 605)
         Me.Step6.Name = "Step6"
         Me.Step6.Size = New System.Drawing.Size(428, 278)
         Me.Step6.TabIndex = 4
         Me.Step6.Visible = False
-        '
-        'Splitter
-        '
-        Me.Splitter.Location = New System.Drawing.Point(25, 62)
-        Me.Splitter.Name = "Splitter"
-        Me.Splitter.Size = New System.Drawing.Size(230, 20)
-        Me.Splitter.TabIndex = 4
-        '
-        'Tail
-        '
-        Me.Tail.Location = New System.Drawing.Point(24, 223)
-        Me.Tail.Name = "Tail"
-        Me.Tail.Size = New System.Drawing.Size(230, 20)
-        Me.Tail.TabIndex = 3
-        '
-        'Head
-        '
-        Me.Head.Location = New System.Drawing.Point(24, 173)
-        Me.Head.Name = "Head"
-        Me.Head.Size = New System.Drawing.Size(230, 20)
-        Me.Head.TabIndex = 2
-        '
-        'split
-        '
-        Me.split.Location = New System.Drawing.Point(24, 107)
-        Me.split.Name = "split"
-        Me.split.Size = New System.Drawing.Size(91, 24)
-        Me.split.TabIndex = 1
-        Me.split.Text = "LSplit"
-        Me.split.UseVisualStyleBackColor = True
-        '
-        'source
-        '
-        Me.source.Location = New System.Drawing.Point(24, 20)
-        Me.source.Name = "source"
-        Me.source.Size = New System.Drawing.Size(230, 20)
-        Me.source.TabIndex = 0
         '
         'Step5
         '
@@ -622,7 +563,7 @@ Partial Class Initial
         Me.PlayPause.Name = "PlayPause"
         Me.PlayPause.Size = New System.Drawing.Size(84, 23)
         Me.PlayPause.TabIndex = 5
-        Me.PlayPause.Text = "Продолжить"
+        Me.PlayPause.Text = "Старт"
         Me.PlayPause.UseVisualStyleBackColor = True
         '
         'Label16
@@ -631,133 +572,19 @@ Partial Class Initial
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label16.Location = New System.Drawing.Point(106, 9)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(226, 17)
+        Me.Label16.Size = New System.Drawing.Size(238, 17)
         Me.Label16.TabIndex = 2
-        Me.Label16.Text = "Запущен процесс поверки ..."
+        Me.Label16.Text = "Запустите процесс поверки ..."
         '
-        'ToolBox
+        'Timer1
         '
-        Me.ToolBox.Image = CType(resources.GetObject("ToolBox.Image"), System.Drawing.Image)
-        Me.ToolBox.Location = New System.Drawing.Point(6, 285)
-        Me.ToolBox.Name = "ToolBox"
-        Me.ToolBox.Size = New System.Drawing.Size(25, 27)
-        Me.ToolBox.TabIndex = 6
-        Me.ToolBox.UseVisualStyleBackColor = True
-        '
-        'lblPIN
-        '
-        Me.lblPIN.AutoSize = True
-        Me.lblPIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.lblPIN.ForeColor = System.Drawing.Color.Red
-        Me.lblPIN.Location = New System.Drawing.Point(2, 294)
-        Me.lblPIN.Name = "lblPIN"
-        Me.lblPIN.Size = New System.Drawing.Size(110, 13)
-        Me.lblPIN.TabIndex = 7
-        Me.lblPIN.Text = "Введите PIN код:"
-        '
-        'PINbox
-        '
-        Me.PINbox.Location = New System.Drawing.Point(113, 291)
-        Me.PINbox.Mask = "0000"
-        Me.PINbox.Name = "PINbox"
-        Me.PINbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PINbox.Size = New System.Drawing.Size(31, 20)
-        Me.PINbox.TabIndex = 8
-        '
-        'CtrlStep1
-        '
-        Me.CtrlStep1.Controls.Add(Me.tabDB)
-        Me.CtrlStep1.Controls.Add(Me.Label17)
-        Me.CtrlStep1.Controls.Add(Me.ShapeContainer5)
-        Me.CtrlStep1.ForeColor = System.Drawing.Color.Black
-        Me.CtrlStep1.Location = New System.Drawing.Point(872, 6)
-        Me.CtrlStep1.Name = "CtrlStep1"
-        Me.CtrlStep1.Size = New System.Drawing.Size(439, 275)
-        Me.CtrlStep1.TabIndex = 9
-        Me.CtrlStep1.Visible = False
-        '
-        'tabDB
-        '
-        Me.tabDB.Controls.Add(Me.metroTab)
-        Me.tabDB.Controls.Add(Me.deviceTab)
-        Me.tabDB.Location = New System.Drawing.Point(20, 77)
-        Me.tabDB.Name = "tabDB"
-        Me.tabDB.SelectedIndex = 0
-        Me.tabDB.Size = New System.Drawing.Size(391, 181)
-        Me.tabDB.TabIndex = 2
-        '
-        'metroTab
-        '
-        Me.metroTab.Controls.Add(Me.tblEnterprize)
-        Me.metroTab.Location = New System.Drawing.Point(4, 22)
-        Me.metroTab.Name = "metroTab"
-        Me.metroTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.metroTab.Size = New System.Drawing.Size(383, 155)
-        Me.metroTab.TabIndex = 0
-        Me.metroTab.Text = "Предприятия"
-        Me.metroTab.UseVisualStyleBackColor = True
-        '
-        'tblEnterprize
-        '
-        Me.tblEnterprize.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tblEnterprize.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblEnterprize.Location = New System.Drawing.Point(3, 3)
-        Me.tblEnterprize.Name = "tblEnterprize"
-        Me.tblEnterprize.Size = New System.Drawing.Size(377, 149)
-        Me.tblEnterprize.TabIndex = 0
-        '
-        'deviceTab
-        '
-        Me.deviceTab.Location = New System.Drawing.Point(4, 22)
-        Me.deviceTab.Name = "deviceTab"
-        Me.deviceTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.deviceTab.Size = New System.Drawing.Size(383, 155)
-        Me.deviceTab.TabIndex = 1
-        Me.deviceTab.Text = "Приборы"
-        Me.deviceTab.UseVisualStyleBackColor = True
-        '
-        'Label17
-        '
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.Purple
-        Me.Label17.Location = New System.Drawing.Point(3, 3)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(421, 54)
-        Me.Label17.TabIndex = 1
-        Me.Label17.Text = "!!! РЕЖИМ РЕДАКТИРОВАНИЯ !!!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Сохранение неправильных данных может привести к оши" & _
-            "бкам при работе программы"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'ShapeContainer5
-        '
-        Me.ShapeContainer5.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer5.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer5.Name = "ShapeContainer5"
-        Me.ShapeContainer5.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape5})
-        Me.ShapeContainer5.Size = New System.Drawing.Size(439, 275)
-        Me.ShapeContainer5.TabIndex = 0
-        Me.ShapeContainer5.TabStop = False
-        '
-        'LineShape5
-        '
-        Me.LineShape5.BorderColor = System.Drawing.Color.Purple
-        Me.LineShape5.BorderWidth = 2
-        Me.LineShape5.Name = "LineShape5"
-        Me.LineShape5.X1 = 1
-        Me.LineShape5.X2 = 428
-        Me.LineShape5.Y1 = 62
-        Me.LineShape5.Y2 = 62
         '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1282, 1007)
-        Me.Controls.Add(Me.CtrlStep1)
-        Me.Controls.Add(Me.PINbox)
-        Me.Controls.Add(Me.lblPIN)
-        Me.Controls.Add(Me.ToolBox)
+        Me.ClientSize = New System.Drawing.Size(918, 913)
         Me.Controls.Add(Me.Step6)
         Me.Controls.Add(Me.Step5)
         Me.Controls.Add(Me.Step4)
@@ -779,16 +606,9 @@ Partial Class Initial
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Step4.ResumeLayout(False)
         Me.Step4.PerformLayout()
-        Me.Step6.ResumeLayout(False)
-        Me.Step6.PerformLayout()
         Me.Step5.ResumeLayout(False)
         Me.Step5.PerformLayout()
-        Me.CtrlStep1.ResumeLayout(False)
-        Me.tabDB.ResumeLayout(False)
-        Me.metroTab.ResumeLayout(False)
-        CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Buttons As System.Windows.Forms.Panel
@@ -841,24 +661,6 @@ Partial Class Initial
     Friend WithEvents G As System.Windows.Forms.TextBox
     Friend WithEvents Log As System.Windows.Forms.RichTextBox
     Friend WithEvents LogErr As System.Windows.Forms.RichTextBox
-    Friend WithEvents Tail As System.Windows.Forms.TextBox
-    Friend WithEvents Head As System.Windows.Forms.TextBox
-    Friend WithEvents split As System.Windows.Forms.Button
-    Friend WithEvents source As System.Windows.Forms.TextBox
-    Friend WithEvents Splitter As System.Windows.Forms.TextBox
-    Friend WithEvents ToolBox As System.Windows.Forms.Button
-    Friend WithEvents lblPIN As System.Windows.Forms.Label
-    Friend WithEvents PINbox As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents CtrlStep1 As System.Windows.Forms.Panel
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents ShapeContainer5 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
-    Friend WithEvents LineShape5 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents tabDB As System.Windows.Forms.TabControl
-    Friend WithEvents metroTab As System.Windows.Forms.TabPage
-    Friend WithEvents deviceTab As System.Windows.Forms.TabPage
-    Friend WithEvents Calibrator As System.IO.Ports.SerialPort
-    Friend WithEvents VoltmRef As System.IO.Ports.SerialPort
-    Friend WithEvents VoltmVer As System.IO.Ports.SerialPort
-    Friend WithEvents tblEnterprize As System.Windows.Forms.DataGridView
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
