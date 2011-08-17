@@ -57,9 +57,9 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("1234")>  _
-        Public ReadOnly Property PIN() As UShort
+        Public ReadOnly Property PIN() As String
             Get
-                Return CType(Me("PIN"),UShort)
+                Return CType(Me("PIN"),String)
             End Get
         End Property
         
@@ -73,6 +73,38 @@ Namespace My
             Set
                 Me("MetroList") = value
             End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("ПНТЭ-6А@Umax=20?ПНТЭ-10А@Umax=50")>  _
+        Public Property DeviceList() As String
+            Get
+                Return CType(Me("DeviceList"),String)
+            End Get
+            Set
+                Me("DeviceList") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("""C:\Staff\Metrology\Debug-COM""")>  _
+        Public ReadOnly Property ExePath() As String
+            Get
+                Return CType(Me("ExePath"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\metrology_Data.mdf;Inte"& _ 
+            "grated Security=True;Connect Timeout=30;User Instance=True")>  _
+        Public ReadOnly Property metrology_DataConnectionString() As String
+            Get
+                Return CType(Me("metrology_DataConnectionString"),String)
+            End Get
         End Property
     End Class
 End Namespace

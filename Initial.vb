@@ -34,6 +34,8 @@
         Me.Width = 445
         Me.Height = 345
         Me.CenterToScreen()
+        CtrlStep1.Location = Step1.Location
+        CtrlStep1.Size = Step1.Size
         Step2.Location = Step1.Location
         Step2.Size = Step1.Size
         Step3.Location = Step1.Location
@@ -47,6 +49,8 @@
         BBack.Enabled = False
         LogErr.Visible = False
         Log.Height = 205
+        lblPIN.Visible = False
+        PINbox.Visible = False
         source.Text = "suka is yana"
         Splitter.Text = "is"
     End Sub
@@ -100,16 +104,22 @@
     End Sub
 
     Private Sub BNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BNext.Click
+        If CtrlStep1.Visible Then
+            'tblEnterprize.Data()
+            My.Settings.Save()
+            Me.Close()
+        End If
         i += 1
         If i > 6 Then
             i = 1
             formReset()
         End If
         svitcher(i)
-
+        'Calibrator.
     End Sub
 
     Private Sub BBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BBack.Click
+        If CtrlStep1.Visible Then Me.Close()
         i -= 1
         svitcher(i)
     End Sub
@@ -125,7 +135,7 @@
     Private Sub PlayPause_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PlayPause.Click
         Me.PlayPause.Enabled = False
         Me.Cursor = Cursors.WaitCursor
-        Dim cmd As String = "C:\Staff\Metrology\Debug-COM\Inspector.exe"
+        Dim cmd As String = My.Settings.ExePath + "\Inspector.exe"
         Dim arg As String = "fix U=2 F=0 Umax=20"
         If TimeOfDay.Minute Mod 2 = 0 Then
             arg = "suka " + arg
@@ -143,5 +153,42 @@
         Head.Text = "?"
         Tail.Text = "?"
         LSplit(source.Text, Splitter.Text, Head.Text, Tail.Text)
+    End Sub
+
+    Private Sub ToolBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolBox.Click
+        ToolBox.Visible = False
+        lblPIN.Visible = True
+        PINbox.Visible = True
+        PINbox.Select()
+    End Sub
+
+    Private Sub PINbox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles PINbox.KeyPress
+        If e.KeyChar = Chr(13) Then
+            If My.Settings.PIN = PINbox.Text Then
+                CtrlStep1.Visible = True
+                Step1.Visible = False
+                Step2.Visible = False
+                Step3.Visible = False
+                Step4.Visible = False
+                Step5.Visible = False
+                Step6.Visible = False
+                BNext.Text = "Сохранить"
+                BNext.Enabled = False
+                BBack.Text = "Отменить"
+                BBack.Enabled = True
+            Else
+                ToolBox.Visible = True
+            End If
+            lblPIN.Visible = False
+            PINbox.Visible = False
+        End If
+    End Sub
+
+    Private Sub tblEnterprize_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles tblEnterprize.CellContentClick
+
+    End Sub
+
+    Private Sub tblEnterprize_CellValueChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles tblEnterprize.CellValueChanged
+        BNext.Enabled = True
     End Sub
 End Class
