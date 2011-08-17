@@ -531,17 +531,20 @@
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/2lp
-        aWlpaWlpaWlpaWlpaWlpaWlpaWnVDGlpaWlpaWlpaWlldmh2aWlpaWlpaWnVDGlpaWlpaWlzTg8PDw8P
-        M0lpaWlpaWnVDGlpaWlpaVMPLQ9ldkkPLQ8tbmlpaWnVDGlpaWlpRA8tDUlOD3YxDy0tBGVpaWnVDGlp
-        aWlEDy0NLUlZD3MxLQ8tLQRjaWnVDGlpaXMNLTMtDS1jbjsELQQtBC0EaWnVDGlpaTktDS0PLQ8tDwQt
-        BAQEBAUEU2nVDGlpaS0zLS0tLQQ7Py0ELQQEBAQESWnVDGlpcw8tLS0PLRVuagQEBAQFBAQEBGnVDGlp
-        dgQtBC0ELQRubgQEBAQEBAQEBGnVDGlpaA8tLQQEBARlST8EBQQFBAUEA2nVDGlpaQQtBC0EBANuBG4D
-        BAQtBAQEP2nVDGlpaS0EBAQEBQRuFXMEBAQFBAQEU2nVDGlpaV0EBAQEBD1uA24EBAQEBAQDaWnVDGlp
-        aWk/BAUEBFU/FT9VBQQFBARVaWnVDGlpaWlpAwQEBD1/VX9+VQQEAz9paWnVDGlpaWlpaQUVBQQFMQUE
-        BAQEP2lpaWnVDGlpaWlpaWlPBAMEAwQDBARuaWlpaWnVDGlpaWlpaWlpaW5ASU9Jc2lpaWlpaWnVDGlp
-        aWlpaWlpaWlpaWlpaWlpaWlpaWnVDGlpaWlpaWlpaWlpaWlpaWlpaWlpaWnVDA==
+        aWlpaWlpaWlpaWlpaWlpaWlpaWn/AGlpaWlpaWlpaWlldmh2aWlpaWlpaWn/AGlpaWlpaWlzTg8PDw8P
+        M0lpaWlpaWn/AGlpaWlpaVMPLQ9ldkkPLQ8tbmlpaWn/AGlpaWlpRA8tDUlOD3YxDy0tBGVpaWn/AGlp
+        aWlEDy0NLUlZD3MxLQ8tLQRjaWn/AGlpaXMNLTMtDS1jbjsELQQtBC0EaWn/AGlpaTktDS0PLQ8tDwQt
+        BAQEBAUEU2n/AGlpaS0zLS0tLQQ7Py0ELQQEBAQESWn/AGlpcw8tLS0PLRVuagQEBAQFBAQEBGn/AGlp
+        dgQtBC0ELQRubgQEBAQEBAQEBGn/AGlpaA8tLQQEBARlST8EBQQFBAUEA2n/AGlpaQQtBC0EBANuBG4D
+        BAQtBAQEP2n/AGlpaS0EBAQEBQRuFXMEBAQFBAQEU2n/AGlpaV0EBAQEBD1uA24EBAQEBAQDaWn/AGlp
+        aWk/BAUEBFU/FT9VBQQFBARVaWn/AGlpaWlpAwQEBD1/VX9+VQQEAz9paWn/AGlpaWlpaQUVBQQFMQUE
+        BAQEP2lpaWn/AGlpaWlpaWlPBAMEAwQDBARuaWlpaWn/AGlpaWlpaWlpaW5ASU9Jc2lpaWlpaWn/AGlp
+        aWlpaWlpaWlpaWlpaWlpaWlpaWn/AGlpaWlpaWlpaWlpaWlpaWlpaWlpaWn/AA==
 </value>
   </data>
+  <metadata name="EnterprizeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>456, 17</value>
+  </metadata>
   <metadata name="LineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1, 62, 427, 0</value>
   </metadata>
@@ -568,6 +571,12 @@
   </metadata>
   <metadata name="VoltmVer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>219, 17</value>
+  </metadata>
+  <metadata name="MetrologyDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>316, 17</value>
+  </metadata>
+  <metadata name="EnterprizeTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>629, 17</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
