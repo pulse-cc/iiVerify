@@ -93,12 +93,7 @@ Partial Class Initial
         Me.Calibrator = New System.IO.Ports.SerialPort(Me.components)
         Me.VoltmRef = New System.IO.Ports.SerialPort(Me.components)
         Me.VoltmVer = New System.IO.Ports.SerialPort(Me.components)
-        Me.MetrologyDataSet = New WindowsApplication1.MetrologyDataSet()
-        Me.EnterprizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EnterprizeTableAdapter = New WindowsApplication1.MetrologyDataSetTableAdapters.EnterprizeTableAdapter()
-        Me.НаименованиеDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.АдресDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ТелефонDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tmrHeatUp = New System.Windows.Forms.Timer(Me.components)
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
@@ -111,8 +106,6 @@ Partial Class Initial
         Me.tabDB.SuspendLayout()
         Me.metroTab.SuspendLayout()
         CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EnterprizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Buttons
@@ -425,6 +418,7 @@ Partial Class Initial
         Me.Minut.Name = "Minut"
         Me.Minut.Size = New System.Drawing.Size(53, 20)
         Me.Minut.TabIndex = 16
+        Me.Minut.Text = "0"
         '
         'Label14
         '
@@ -441,6 +435,7 @@ Partial Class Initial
         Me.Hourse.Name = "Hourse"
         Me.Hourse.Size = New System.Drawing.Size(53, 20)
         Me.Hourse.TabIndex = 14
+        Me.Hourse.Text = "0"
         '
         'Label13
         '
@@ -489,6 +484,7 @@ Partial Class Initial
         Me.U.Name = "U"
         Me.U.Size = New System.Drawing.Size(84, 20)
         Me.U.TabIndex = 7
+        Me.U.Text = "5"
         '
         'Label9
         '
@@ -707,12 +703,8 @@ Partial Class Initial
         '
         'tblEnterprize
         '
-        Me.tblEnterprize.AutoGenerateColumns = False
         Me.tblEnterprize.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tblEnterprize.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.НаименованиеDataGridViewTextBoxColumn, Me.АдресDataGridViewTextBoxColumn, Me.ТелефонDataGridViewTextBoxColumn})
-        Me.tblEnterprize.DataSource = Me.EnterprizeBindingSource
         Me.tblEnterprize.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblEnterprize.EnableHeadersVisualStyles = False
         Me.tblEnterprize.Location = New System.Drawing.Point(3, 3)
         Me.tblEnterprize.Name = "tblEnterprize"
         Me.tblEnterprize.Size = New System.Drawing.Size(377, 149)
@@ -760,37 +752,8 @@ Partial Class Initial
         Me.LineShape5.Y1 = 62
         Me.LineShape5.Y2 = 62
         '
-        'MetrologyDataSet
+        'tmrHeatUp
         '
-        Me.MetrologyDataSet.DataSetName = "MetrologyDataSet"
-        Me.MetrologyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EnterprizeBindingSource
-        '
-        Me.EnterprizeBindingSource.DataMember = "Enterprize"
-        Me.EnterprizeBindingSource.DataSource = Me.MetrologyDataSet
-        '
-        'EnterprizeTableAdapter
-        '
-        Me.EnterprizeTableAdapter.ClearBeforeFill = True
-        '
-        'НаименованиеDataGridViewTextBoxColumn
-        '
-        Me.НаименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование"
-        Me.НаименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование"
-        Me.НаименованиеDataGridViewTextBoxColumn.Name = "НаименованиеDataGridViewTextBoxColumn"
-        '
-        'АдресDataGridViewTextBoxColumn
-        '
-        Me.АдресDataGridViewTextBoxColumn.DataPropertyName = "Адрес"
-        Me.АдресDataGridViewTextBoxColumn.HeaderText = "Адрес"
-        Me.АдресDataGridViewTextBoxColumn.Name = "АдресDataGridViewTextBoxColumn"
-        '
-        'ТелефонDataGridViewTextBoxColumn
-        '
-        Me.ТелефонDataGridViewTextBoxColumn.DataPropertyName = "Телефон"
-        Me.ТелефонDataGridViewTextBoxColumn.HeaderText = "Телефон"
-        Me.ТелефонDataGridViewTextBoxColumn.Name = "ТелефонDataGridViewTextBoxColumn"
         '
         'Initial
         '
@@ -831,8 +794,6 @@ Partial Class Initial
         Me.tabDB.ResumeLayout(False)
         Me.metroTab.ResumeLayout(False)
         CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EnterprizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -906,11 +867,6 @@ Partial Class Initial
     Friend WithEvents VoltmRef As System.IO.Ports.SerialPort
     Friend WithEvents VoltmVer As System.IO.Ports.SerialPort
     Friend WithEvents tblEnterprize As System.Windows.Forms.DataGridView
-    Friend WithEvents MetrologyDataSet As WindowsApplication1.MetrologyDataSet
-    Friend WithEvents EnterprizeBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents EnterprizeTableAdapter As WindowsApplication1.MetrologyDataSetTableAdapters.EnterprizeTableAdapter
-    Friend WithEvents НаименованиеDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents АдресDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ТелефонDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents tmrHeatUp As System.Windows.Forms.Timer
 
 End Class

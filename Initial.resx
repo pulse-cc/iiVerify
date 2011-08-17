@@ -157,8 +157,8 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVUAAADwCAYAAACwqvfHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN1AAA
-        DdQB75G6FQAASZpJREFUeF7tnQecFMXyx/fyHRyXCEfmyDnnfOScM0fO8YhmBcSAWcwYnqI+49+ACmYR
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0QAA
+        DdEBwivf4wAASZpJREFUeF7tnQecFMXyx/fyHRyXCEfmyDnnfOScM0fO8YhmBcSAWcwYnqI+49+ACmYR
         MWEWs0/fM2cURURBsf7165teZ5e9jb3pqPt86nO7Mz09s93V36kOVZ1ARA75kxKQEpASkBIwVAKAqoiU
         geiA6IDogBkdEKDKS0V0QHRAdMCgDkhhGixMedObedNLOUo5xrMOCFQFqqIDogOiAwZ1QArTYGHG89tV
         nl2sQ9EBMzogUBWoig6IDogOGNQBKUyDhSlvejNveilHKcd41gGBqkBVdEB0QHTAoA5IYRoszHh+u8qz
@@ -531,20 +531,17 @@
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/2lp
-        aWlpaWlpaWlpaWlpaWlpaWlpaWn/AGlpaWlpaWlpaWlldmh2aWlpaWlpaWn/AGlpaWlpaWlzTg8PDw8P
-        M0lpaWlpaWn/AGlpaWlpaVMPLQ9ldkkPLQ8tbmlpaWn/AGlpaWlpRA8tDUlOD3YxDy0tBGVpaWn/AGlp
-        aWlEDy0NLUlZD3MxLQ8tLQRjaWn/AGlpaXMNLTMtDS1jbjsELQQtBC0EaWn/AGlpaTktDS0PLQ8tDwQt
-        BAQEBAUEU2n/AGlpaS0zLS0tLQQ7Py0ELQQEBAQESWn/AGlpcw8tLS0PLRVuagQEBAQFBAQEBGn/AGlp
-        dgQtBC0ELQRubgQEBAQEBAQEBGn/AGlpaA8tLQQEBARlST8EBQQFBAUEA2n/AGlpaQQtBC0EBANuBG4D
-        BAQtBAQEP2n/AGlpaS0EBAQEBQRuFXMEBAQFBAQEU2n/AGlpaV0EBAQEBD1uA24EBAQEBAQDaWn/AGlp
-        aWk/BAUEBFU/FT9VBQQFBARVaWn/AGlpaWlpAwQEBD1/VX9+VQQEAz9paWn/AGlpaWlpaQUVBQQFMQUE
-        BAQEP2lpaWn/AGlpaWlpaWlPBAMEAwQDBARuaWlpaWn/AGlpaWlpaWlpaW5ASU9Jc2lpaWlpaWn/AGlp
-        aWlpaWlpaWlpaWlpaWlpaWlpaWn/AGlpaWlpaWlpaWlpaWlpaWlpaWlpaWn/AA==
+        aWlpaWlpaWlpaWlpaWlpaWlpaWkAAGlpaWlpaWlpaWlldmh2aWlpaWlpaWkAAGlpaWlpaWlzTg8PDw8P
+        M0lpaWlpaWkAAGlpaWlpaVMPLQ9ldkkPLQ8tbmlpaWkAAGlpaWlpRA8tDUlOD3YxDy0tBGVpaWkAAGlp
+        aWlEDy0NLUlZD3MxLQ8tLQRjaWkAAGlpaXMNLTMtDS1jbjsELQQtBC0EaWkAAGlpaTktDS0PLQ8tDwQt
+        BAQEBAUEU2kAAGlpaS0zLS0tLQQ7Py0ELQQEBAQESWkAAGlpcw8tLS0PLRVuagQEBAQFBAQEBGkAAGlp
+        dgQtBC0ELQRubgQEBAQEBAQEBGkAAGlpaA8tLQQEBARlST8EBQQFBAUEA2kAAGlpaQQtBC0EBANuBG4D
+        BAQtBAQEP2kAAGlpaS0EBAQEBQRuFXMEBAQFBAQEU2kAAGlpaV0EBAQEBD1uA24EBAQEBAQDaWkAAGlp
+        aWk/BAUEBFU/FT9VBQQFBARVaWkAAGlpaWlpAwQEBD1/VX9+VQQEAz9paWkAAGlpaWlpaQUVBQQFMQUE
+        BAQEP2lpaWkAAGlpaWlpaWlPBAMEAwQDBARuaWlpaWkAAGlpaWlpaWlpaW5ASU9Jc2lpaWlpaWkAAGlp
+        aWlpaWlpaWlpaWlpaWlpaWlpaWkAAGlpaWlpaWlpaWlpaWlpaWlpaWlpaWkAAA==
 </value>
   </data>
-  <metadata name="EnterprizeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>456, 17</value>
-  </metadata>
   <metadata name="LineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1, 62, 427, 0</value>
   </metadata>
@@ -572,11 +569,8 @@
   <metadata name="VoltmVer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>219, 17</value>
   </metadata>
-  <metadata name="MetrologyDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="tmrHeatUp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>316, 17</value>
-  </metadata>
-  <metadata name="EnterprizeTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>629, 17</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
