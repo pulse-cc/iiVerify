@@ -31,6 +31,8 @@
 
 
     Private Sub Initial_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: данная строка кода позволяет загрузить данные в таблицу "MetrologyDataSet.Enterprize". При необходимости она может быть перемещена или удалена.
+        Me.EnterprizeTableAdapter.Fill(Me.MetrologyDataSet.Enterprize)
         Me.Width = 445
         Me.Height = 345
         Me.CenterToScreen()
@@ -105,7 +107,9 @@
 
     Private Sub BNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BNext.Click
         If CtrlStep1.Visible Then
-            'tblEnterprize.Data()
+            'Me.EnterprizeTableAdapter.NewEnterprize()
+            '(Me.MetrologyDataSet.Enterprize)
+            'Me.EnterprizeBindingSource.S
             My.Settings.Save()
             Me.Close()
         End If
@@ -182,10 +186,6 @@
             lblPIN.Visible = False
             PINbox.Visible = False
         End If
-    End Sub
-
-    Private Sub tblEnterprize_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles tblEnterprize.CellContentClick
-
     End Sub
 
     Private Sub tblEnterprize_CellValueChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles tblEnterprize.CellValueChanged
