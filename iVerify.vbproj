@@ -8,8 +8,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{34DAC162-BEC1-4966-9438-D4A916E497D6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
-    <RootNamespace>WindowsApplication1</RootNamespace>
+    <StartupObject>WindowsApplication.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication</RootNamespace>
     <AssemblyName>iVerify</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -102,6 +102,9 @@
     <Compile Include="MetrologyDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>MetrologyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MetrologyDataSet.vb">
       <DependentUpon>MetrologyDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -197,11 +200,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Metrology.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Metrology.mdf" />
     <Content Include="Metrology_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Metrology.mdf</DependentUpon>
     </Content>
   </ItemGroup>
