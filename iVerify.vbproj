@@ -10,8 +10,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{34DAC162-BEC1-4966-9438-D4A916E497D6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindowsApplication.My.MyApplication</StartupObject>
-    <RootNamespace>WindowsApplication</RootNamespace>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
     <AssemblyName>iVerify</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>

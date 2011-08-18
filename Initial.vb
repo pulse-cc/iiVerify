@@ -40,6 +40,7 @@
 
     Private Sub Initial_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: данная строка кода позволяет загрузить данные в таблицу "MetrologyDataSet.Enterprize". При необходимости она может быть перемещена или удалена.
+        ' Me.EnterprizeTableAdapter.Fill(Me.MetrologyDataSet.Enterprize)
         Me.Width = 445
         Me.Height = 345
         Me.CenterToScreen()
@@ -172,19 +173,16 @@
             PINbox.Visible = False
         End If
     End Sub
-
     Structure EMF
         Dim value As Double
         Dim nameOfDimension As String
     End Structure
-
     Sub showErr()
         If LogErr.Text <> "" Then
             LogErr.Visible = True
             Log.Height = 134
         End If
     End Sub
-
     Sub getEMF(ByVal EMFnum As Int16, ByVal EMFname As String, ByVal refVer As Boolean)
         Dim Head As String = ""
         Dim Tail As String = ""

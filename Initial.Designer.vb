@@ -867,9 +867,4 @@ Partial Class Initial
     Friend WithEvents VoltmVer As System.IO.Ports.SerialPort
     Friend WithEvents tblEnterprize As System.Windows.Forms.DataGridView
     Friend WithEvents tmrHeatUp As System.Windows.Forms.Timer
-    Friend WithEvents EnterprizeBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents NameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AddressDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PhoneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-
 End Class
