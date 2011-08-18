@@ -40,7 +40,6 @@
 
     Private Sub Initial_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: данная строка кода позволяет загрузить данные в таблицу "MetrologyDataSet.Enterprize". При необходимости она может быть перемещена или удалена.
-        Me.EnterprizeTableAdapter.Fill(Me.MetrologyDataSet.Enterprize)
         Me.Width = 445
         Me.Height = 345
         Me.CenterToScreen()
@@ -126,7 +125,7 @@
             'Me.EnterprizeTableAdapter.NewEnterprize()
             '(Me.MetrologyDataSet.Enterprize)
             'Me.EnterprizeBindingSource.S
-            Me.EnterprizeTableAdapter.Update(Me.MetrologyDataSet.Enterprize)
+            'Me.EnterprizeTableAdapter.Update(Me.MetrologyDataSet.Enterprize)
             My.Settings.Save()
             Me.Close()
         End If

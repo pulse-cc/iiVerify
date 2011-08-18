@@ -94,12 +94,6 @@ Partial Class Initial
         Me.VoltmRef = New System.IO.Ports.SerialPort(Me.components)
         Me.VoltmVer = New System.IO.Ports.SerialPort(Me.components)
         Me.tmrHeatUp = New System.Windows.Forms.Timer(Me.components)
-        Me.MetrologyDataSet = New WindowsApplication.MetrologyDataSet()
-        Me.EnterprizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EnterprizeTableAdapter = New WindowsApplication.MetrologyDataSetTableAdapters.EnterprizeTableAdapter()
-        Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PhoneDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
@@ -112,8 +106,6 @@ Partial Class Initial
         Me.tabDB.SuspendLayout()
         Me.metroTab.SuspendLayout()
         CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EnterprizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Buttons
@@ -711,12 +703,8 @@ Partial Class Initial
         '
         'tblEnterprize
         '
-        Me.tblEnterprize.AutoGenerateColumns = False
         Me.tblEnterprize.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tblEnterprize.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NameDataGridViewTextBoxColumn, Me.AddressDataGridViewTextBoxColumn, Me.PhoneDataGridViewTextBoxColumn})
-        Me.tblEnterprize.DataSource = Me.EnterprizeBindingSource
-        Me.tblEnterprize.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tblEnterprize.Location = New System.Drawing.Point(3, 3)
+        Me.tblEnterprize.Location = New System.Drawing.Point(0, 0)
         Me.tblEnterprize.Name = "tblEnterprize"
         Me.tblEnterprize.Size = New System.Drawing.Size(377, 149)
         Me.tblEnterprize.TabIndex = 0
@@ -766,41 +754,6 @@ Partial Class Initial
         'tmrHeatUp
         '
         '
-        'MetrologyDataSet
-        '
-        Me.MetrologyDataSet.DataSetName = "MetrologyDataSet"
-        Me.MetrologyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EnterprizeBindingSource
-        '
-        Me.EnterprizeBindingSource.DataMember = "Enterprize"
-        Me.EnterprizeBindingSource.DataSource = Me.MetrologyDataSet
-        '
-        'EnterprizeTableAdapter
-        '
-        Me.EnterprizeTableAdapter.ClearBeforeFill = True
-        '
-        'NameDataGridViewTextBoxColumn
-        '
-        Me.NameDataGridViewTextBoxColumn.DataPropertyName = "Name"
-        Me.NameDataGridViewTextBoxColumn.HeaderText = "Наименование"
-        Me.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn"
-        Me.NameDataGridViewTextBoxColumn.ToolTipText = "Официальное название организации"
-        '
-        'AddressDataGridViewTextBoxColumn
-        '
-        Me.AddressDataGridViewTextBoxColumn.DataPropertyName = "Address"
-        Me.AddressDataGridViewTextBoxColumn.HeaderText = "Адрес"
-        Me.AddressDataGridViewTextBoxColumn.Name = "AddressDataGridViewTextBoxColumn"
-        Me.AddressDataGridViewTextBoxColumn.ToolTipText = "Официальный адрес регистрации юридического лица"
-        '
-        'PhoneDataGridViewTextBoxColumn
-        '
-        Me.PhoneDataGridViewTextBoxColumn.DataPropertyName = "Phone"
-        Me.PhoneDataGridViewTextBoxColumn.HeaderText = "Телефон"
-        Me.PhoneDataGridViewTextBoxColumn.Name = "PhoneDataGridViewTextBoxColumn"
-        Me.PhoneDataGridViewTextBoxColumn.ToolTipText = "Контактный телефон"
-        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -840,8 +793,6 @@ Partial Class Initial
         Me.tabDB.ResumeLayout(False)
         Me.metroTab.ResumeLayout(False)
         CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EnterprizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -916,9 +867,7 @@ Partial Class Initial
     Friend WithEvents VoltmVer As System.IO.Ports.SerialPort
     Friend WithEvents tblEnterprize As System.Windows.Forms.DataGridView
     Friend WithEvents tmrHeatUp As System.Windows.Forms.Timer
-    Friend WithEvents MetrologyDataSet As WindowsApplication.MetrologyDataSet
     Friend WithEvents EnterprizeBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents EnterprizeTableAdapter As WindowsApplication.MetrologyDataSetTableAdapters.EnterprizeTableAdapter
     Friend WithEvents NameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AddressDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PhoneDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn

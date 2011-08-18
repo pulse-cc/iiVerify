@@ -95,17 +95,6 @@ Namespace My
                 Return CType(Me("ExePath"),String)
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Metrology.mdf;Integrate"& _ 
-            "d Security=True;Connect Timeout=30;User Instance=True")>  _
-        Public ReadOnly Property MetrologyConnectionString() As String
-            Get
-                Return CType(Me("MetrologyConnectionString"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 
