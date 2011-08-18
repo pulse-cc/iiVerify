@@ -94,12 +94,12 @@ Partial Class Initial
         Me.VoltmRef = New System.IO.Ports.SerialPort(Me.components)
         Me.VoltmVer = New System.IO.Ports.SerialPort(Me.components)
         Me.tmrHeatUp = New System.Windows.Forms.Timer(Me.components)
-        Me.MetrologyDataSet = New WindowsApplication.MetrologyDataSet()
-        Me.EnterprizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EnterprizeTableAdapter = New WindowsApplication.MetrologyDataSetTableAdapters.EnterprizeTableAdapter()
         Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PhoneDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EnterprizeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MetrologyDataSet = New WindowsApplication.MetrologyDataSet()
+        Me.EnterprizeTableAdapter = New WindowsApplication.MetrologyDataSetTableAdapters.EnterprizeTableAdapter()
         Me.Buttons.SuspendLayout()
         Me.Step1.SuspendLayout()
         Me.Step2.SuspendLayout()
@@ -112,8 +112,8 @@ Partial Class Initial
         Me.tabDB.SuspendLayout()
         Me.metroTab.SuspendLayout()
         CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EnterprizeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Buttons
@@ -766,20 +766,6 @@ Partial Class Initial
         'tmrHeatUp
         '
         '
-        'MetrologyDataSet
-        '
-        Me.MetrologyDataSet.DataSetName = "MetrologyDataSet"
-        Me.MetrologyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EnterprizeBindingSource
-        '
-        Me.EnterprizeBindingSource.DataMember = "Enterprize"
-        Me.EnterprizeBindingSource.DataSource = Me.MetrologyDataSet
-        '
-        'EnterprizeTableAdapter
-        '
-        Me.EnterprizeTableAdapter.ClearBeforeFill = True
-        '
         'NameDataGridViewTextBoxColumn
         '
         Me.NameDataGridViewTextBoxColumn.DataPropertyName = "Name"
@@ -800,6 +786,20 @@ Partial Class Initial
         Me.PhoneDataGridViewTextBoxColumn.HeaderText = "Телефон"
         Me.PhoneDataGridViewTextBoxColumn.Name = "PhoneDataGridViewTextBoxColumn"
         Me.PhoneDataGridViewTextBoxColumn.ToolTipText = "Контактный телефон"
+        '
+        'EnterprizeBindingSource
+        '
+        Me.EnterprizeBindingSource.DataMember = "Enterprize"
+        Me.EnterprizeBindingSource.DataSource = Me.MetrologyDataSet
+        '
+        'MetrologyDataSet
+        '
+        'Me.MetrologyDataSet.DataSetName = "MetrologyDataSet"
+        Me.MetrologyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EnterprizeTableAdapter
+        '
+        Me.EnterprizeTableAdapter.ClearBeforeFill = True
         '
         'Initial
         '
@@ -840,8 +840,8 @@ Partial Class Initial
         Me.tabDB.ResumeLayout(False)
         Me.metroTab.ResumeLayout(False)
         CType(Me.tblEnterprize, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EnterprizeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MetrologyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

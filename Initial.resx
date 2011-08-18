@@ -126,24 +126,6 @@
   <metadata name="LineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>427, 0</value>
   </metadata>
-  <metadata name="LineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 64, 427, 0</value>
-  </metadata>
-  <metadata name="LineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 64</value>
-  </metadata>
-  <metadata name="LineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 0</value>
-  </metadata>
-  <metadata name="LineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 64, 427, 0</value>
-  </metadata>
-  <metadata name="LineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 64</value>
-  </metadata>
-  <metadata name="LineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 0</value>
-  </metadata>
   <metadata name="LineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>0, 64, 427, 0</value>
   </metadata>
@@ -484,24 +466,6 @@
   <metadata name="LineShape3.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>427, 0</value>
   </metadata>
-  <metadata name="LineShape3.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 37, 427, 0</value>
-  </metadata>
-  <metadata name="LineShape3.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 37</value>
-  </metadata>
-  <metadata name="LineShape3.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 0</value>
-  </metadata>
-  <metadata name="LineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 62, 427, 0</value>
-  </metadata>
-  <metadata name="LineShape4.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 62</value>
-  </metadata>
-  <metadata name="LineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 0</value>
-  </metadata>
   <metadata name="LineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1, 62, 427, 0</value>
   </metadata>
@@ -531,28 +495,22 @@
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
         AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/2lp
-        aWlpaWlpaWlpaWlpaWlpaWlpaWk1DGlpaWlpaWlpaWlldmh2aWlpaWlpaWk1DGlpaWlpaWlzTg8PDw8P
-        M0lpaWlpaWk1DGlpaWlpaVMPLQ9ldkkPLQ8tbmlpaWk1DGlpaWlpRA8tDUlOD3YxDy0tBGVpaWk1DGlp
-        aWlEDy0NLUlZD3MxLQ8tLQRjaWk1DGlpaXMNLTMtDS1jbjsELQQtBC0EaWk1DGlpaTktDS0PLQ8tDwQt
-        BAQEBAUEU2k1DGlpaS0zLS0tLQQ7Py0ELQQEBAQESWk1DGlpcw8tLS0PLRVuagQEBAQFBAQEBGk1DGlp
-        dgQtBC0ELQRubgQEBAQEBAQEBGk1DGlpaA8tLQQEBARlST8EBQQFBAUEA2k1DGlpaQQtBC0EBANuBG4D
-        BAQtBAQEP2k1DGlpaS0EBAQEBQRuFXMEBAQFBAQEU2k1DGlpaV0EBAQEBD1uA24EBAQEBAQDaWk1DGlp
-        aWk/BAUEBFU/FT9VBQQFBARVaWk1DGlpaWlpAwQEBD1/VX9+VQQEAz9paWk1DGlpaWlpaQUVBQQFMQUE
-        BAQEP2lpaWk1DGlpaWlpaWlPBAMEAwQDBARuaWlpaWk1DGlpaWlpaWlpaW5ASU9Jc2lpaWlpaWk1DGlp
-        aWlpaWlpaWlpaWlpaWlpaWlpaWk1DGlpaWlpaWlpaWlpaWlpaWlpaWlpaWk1DA==
+        aWlpaWlpaWlpaWlpaWlpaWlpaWnhCGlpaWlpaWlpaWlldmh2aWlpaWlpaWnhCGlpaWlpaWlzTg8PDw8P
+        M0lpaWlpaWnhCGlpaWlpaVMPLQ9ldkkPLQ8tbmlpaWnhCGlpaWlpRA8tDUlOD3YxDy0tBGVpaWnhCGlp
+        aWlEDy0NLUlZD3MxLQ8tLQRjaWnhCGlpaXMNLTMtDS1jbjsELQQtBC0EaWnhCGlpaTktDS0PLQ8tDwQt
+        BAQEBAUEU2nhCGlpaS0zLS0tLQQ7Py0ELQQEBAQESWnhCGlpcw8tLS0PLRVuagQEBAQFBAQEBGnhCGlp
+        dgQtBC0ELQRubgQEBAQEBAQEBGnhCGlpaA8tLQQEBARlST8EBQQFBAUEA2nhCGlpaQQtBC0EBANuBG4D
+        BAQtBAQEP2nhCGlpaS0EBAQEBQRuFXMEBAQFBAQEU2nhCGlpaV0EBAQEBD1uA24EBAQEBAQDaWnhCGlp
+        aWk/BAUEBFU/FT9VBQQFBARVaWnhCGlpaWlpAwQEBD1/VX9+VQQEAz9paWnhCGlpaWlpaQUVBQQFMQUE
+        BAQEP2lpaWnhCGlpaWlpaWlPBAMEAwQDBARuaWlpaWnhCGlpaWlpaWlpaW5ASU9Jc2lpaWlpaWnhCGlp
+        aWlpaWlpaWlpaWlpaWlpaWlpaWnhCGlpaWlpaWlpaWlpaWlpaWlpaWlpaWnhCA==
 </value>
   </data>
   <metadata name="EnterprizeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>562, 17</value>
   </metadata>
-  <metadata name="LineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 62, 427, 0</value>
-  </metadata>
-  <metadata name="LineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1, 62</value>
-  </metadata>
-  <metadata name="LineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>427, 0</value>
+  <metadata name="MetrologyDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>422, 17</value>
   </metadata>
   <metadata name="LineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1, 62, 427, 0</value>
@@ -574,9 +532,6 @@
   </metadata>
   <metadata name="tmrHeatUp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>316, 17</value>
-  </metadata>
-  <metadata name="MetrologyDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>422, 17</value>
   </metadata>
   <metadata name="EnterprizeTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 54</value>
