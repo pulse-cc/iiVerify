@@ -99,6 +99,17 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\metrology_Data.mdf;Inte"& _ 
+            "grated Security=True;Connect Timeout=30;User Instance=True")>  _
+        Public ReadOnly Property metrology_DataConnectionString() As String
+            Get
+                Return CType(Me("metrology_DataConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Metrology.mdf;Integrate"& _ 
             "d Security=True;Connect Timeout=30;User Instance=True")>  _
         Public ReadOnly Property MetrologyConnectionString() As String
@@ -117,9 +128,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.WindowsApplication.My.MySettings
+        Friend ReadOnly Property Settings() As Global.WindowsApplication1.My.MySettings
             Get
-                Return Global.WindowsApplication.My.MySettings.Default
+                Return Global.WindowsApplication1.My.MySettings.Default
             End Get
         End Property
     End Module
